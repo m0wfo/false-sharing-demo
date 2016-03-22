@@ -7,7 +7,7 @@ public class FalseSharingBenchmark {
     private static final SomeClass unpadded = new SomeClass();
     private static final SomePaddedClass padded = new SomePaddedClass();
 
-    public static void main(String[] args) throws Exception {
+    public static void run() throws Exception {
         double unpaddedRun = updateValues(() -> {
             for (int i = 0; i < ITERATIONS; i++) {
                 unpadded.valueA++;
