@@ -3,9 +3,7 @@ package com.logentries.blog;
 import org.openjdk.jmh.annotations.*;
 import sun.misc.Contended;
 
-/**
- * Created by chris on 22/03/2016.
- */
+
 @Fork(value = 1, jvmArgsPrepend = "-XX:-RestrictContended")
 @Warmup(iterations = 10)
 @Measurement(iterations = 25)
